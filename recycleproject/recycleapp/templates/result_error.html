@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--icon-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!--bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!--main css-->
+  <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/style.css' %}" >
+
+  <!--font-->
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Song+Myung" rel="stylesheet">
+
+  <title>Recycle Information</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+          <ul class="nav-container">
+            <li class="nav-item nav-name">Recycle Information</li>
+            <li class="nav-item item"><a href="{% url 'home' %}">Home </a></li>
+            <li class="nav-item item"><a href="{% url 'about' %}">About</a></li>
+          </ul>
+        </nav>
+    </header>
+    
+
+    <h1 style="text-align: center; font-size: 50px ">RESULT</h1>
+    <div class="container error-text">
+        <img src="{% static 'img/error.png' %}" style="width:70%; display: block; margin: 0px auto;">
+        
+    </div>
+    
+</body>
+
+</html>
+
+

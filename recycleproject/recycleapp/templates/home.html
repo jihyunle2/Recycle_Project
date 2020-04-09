@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!--bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+
+  <!--main css-->
+  <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/style.css' %}" >
+  
+  <!--font-->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+  <title>Recycle Information</title>
+
+  <style type="text/css"> 
+    a:link {text-decoration:none; color:gray;}
+    a:visited {text-decoration:none; color:gray;} 
+    a:active {text-decoration:none; color:gray;} 
+    a:hover {text-decoration:none; color:black;}  
+  </style>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="nav-container">
+        <li class="nav-item nav-name">Recycle Information</li>
+        <li class="nav-item item"><a href="{% url 'home' %}">Home </a></li>
+        <li class="nav-item item"><a href="{% url 'about' %}">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <br><br>
+  <div class="container banner" style="text-align: center;">
+    <a href="{% url 'camera_img' %}"><img src="{% static 'img/banner1.png' %}"></a><br><br>
+    <a href="{% url 'camera_mark' %}"><img src="{% static 'img/banner2.png' %}"></a><br><br>
+    <a href="{% url 'result_count' %}"><img src="{% static 'img/banner3.png' %}"></a>
+    
+
+  </div>
+
+
+  <!-- <div class="container">
+    <div class="text">
+        <form action="{% url 'result_hdpe' %}">
+            <textarea class="texta" name="fulltext"></textarea>
+            <br>
+            <div class="but"><button type="submit" class="btn"><p>찾아보기</p></button></div>
+        </form>
+    </div>
+  </div> -->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--icon-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!--bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!--main css-->
+  <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/style.css' %}" >
+
+  <!--font-->
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Song+Myung" rel="stylesheet">
+
+  <title>Recycle Information</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="nav-container">
+        <li class="nav-item nav-name">Recycle Information</li>
+        <li class="nav-item item"><a href="{% url 'home' %}">Home </a></li>
+        <li class="nav-item item"><a href="{% url 'about' %}">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <br>
+<h1 style="text-align: center; font-size: 50px ">RESULT</h1>
+  <div class="container" style="text-align: center">
+    <div class="result">
+      <div class="r1">
+        <div>
+          <img class="imgp" src="{% static 'img/7.png' %}">
+        </div>
+      </div>
+      <div class="r2">
+        <div>
+            <h5>[플라스틱 OTHER]</h5>
+            <img src="{% static 'img/saved_img.jpg' %}" style="width:50%">
+        </div>
+      </div>
+      <div class="r3">
+        <div>
+          <p>
+            <span style="font-size: 18px; font-weight: bold; background-color:rgb(255, 255, 121)">플라스틱 재활용 <span class="possibility">불가능</span><br></span>
+            플라스틱 종류 : 대용량 물통, 게임기, 팔레트 등<br>
+            <i class="far fa-star"></i> 음식물 보관 금지 <i class="far fa-star"></i>
+          </p>
+        </div>
+      </div>
+      <div class="r4">
+        <div>
+            <p>페트병과 플라스틱 용기에 내용물은 깨끗이 비우고, 부착 상표와 뚜껑 등 다른 재질로 된 부분은 제거해주세요. <br>
+              단, 알약 포장재와 카세트 테이프 등 여러 재질이 섞이고 분리가 어려운 제품은 종량제 봉투에 담아 버려주세요.</p>
+        </div>
+      </div>
+        <div class="r5">
+          <div>
+            <h5>분리 배출 요령</h5>
+          </div>
+        </div>
+        <div class="r6">
+          <div>
+            <p><i class="fas fa-check"></i> 뚜껑을 제거한 후, 내용물을 비우고 물로 한번 헹구어 배출한다.<br>
+              <i class="fas fa-check"></i> 가능한 압착하여 부피를 축소한다.<br>
+              <i class="fas fa-check"></i> 알루미늄 뚜껑은 고철로 분리 배출한다.</p>
+          </div>
+        </div>
+        <div class="r7">
+          <div>
+            <p>이제는 재활용품 분리배출 제대로 해야 합니다.<br>
+                내용물은 비우고 깨끗이 씻어 배출하지 않으면 활용이 어렵고 오히려 환경 오염이 될 수 있습니다.<br>
+                배출 시 꼼꼼한 분리배출은 사회적 비용도 절감하고 우리 모두를 깨끗한 환경에서 살 수 있게 합니다.
+              </p>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  
+</body>
+
+</html>

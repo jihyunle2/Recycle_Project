@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/style.css' %}" >
+
+    <!-- Icon File -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+ 
+    <title>Recycle Information</title>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-container">
+            <li class="nav-item nav-name">Recycle Information</li>
+            <li class="nav-item item"><a href="{% url 'home' %}">Home </a></li>
+            <li class="nav-item item"><a href="{% url 'about' %}">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container" style="text-align: center">
+        <br>
+        <h3>Information about developers</h3>
+        <div class="about">
+                <div class="t1">
+                    <div>
+                        <i class="fas fa-user-friends fa-3x"></i></i>
+                    </div>
+                </div>
+                <div class="t2">
+                    <div>
+                        <i class="far fa-calendar-alt fa-3x"></i>
+                    </div>
+                </div>
+                <div class="t3">
+                    <div>
+                        <i class="fas fa-question fa-3x"></i>
+                    </div>
+                </div>
+                <div class="t4">
+                    <div>
+                        <h4>WHO</h4><br>
+                        <p>한국외국어대학교에 재학중인 최윤영, 이지현 학생이 캡스톤 설계 프로젝트를 위해 만든 페이지입니다.</p>
+                    </div>
+                </div>
+                <div class="t5">
+                    <div>
+                        <h4>WHEN</h4><br>
+                        <p>2019년 1학기에 진행하였습니다.</p>
+                    </div>
+                </div>
+                <div class="t6">
+                    <div>
+                        <h4>WHAT</h4><br>
+                        <p>재활용 쓰레기를 인식하여 분류방법과 정보를 제공하는 프로그램입니다.</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
